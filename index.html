@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio / Company</title>
-  <link rel="stylesheet" href="https://kawiprints.github.io/_css/style.css">
+  <link rel="stylesheet" href="_css/style.css">
 </head>
 
 <body>
   <div id="header"></div>
 
   <script>
-    fetch("https://kawiprints.github.io/_shared/header.html")
+    fetch("_shared/header.html")
       .then(response => response.text())
       .then(data => {
         document.getElementById("header").innerHTML = data;
