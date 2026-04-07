@@ -1,91 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio / Company</title>
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* light grey / dirty white */
-        }
-
-        /* HEADER */
-        header {
-            background-color: #2b2b2b; /* dark grey, not quite black */
-            color: white;
-            padding: 20px 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* NAVIGATION */
-        nav {
-            margin-top: 10px;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            gap: 30px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 1.1rem;
-            font-weight: 500;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        /* LOGO */
-        .logo {
-            font-size: 2rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-        }
-
-        /* MAIN CONTENT AREA */
-        main {
-            padding: 50px;
-            text-align: center;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio / Company</title>
+  <link rel="stylesheet" href="/_css/style.css">
 </head>
 
 <body>
+  <div id="header"></div>
 
-    <header>
-        <div class="logo">KawiPrints</div>
+  <script>
+    fetch("/_shared/header.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("header").innerHTML = data;
+      });
+  </script>
 
-        <nav>
-            <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/portfolio/">Portfolio</a></li>
-              <li><a href="/contact/">Contact</a></li>
-              <li><a href="/fun/">Fun</a></li>
 
-              <!-- <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/index.html">Home</a></li>
-              <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/about/index.html">About</a></li>
-              <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/portfolio/index.html">Portfolio</a></li>
-              <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/contact/index.html">Contact</a></li>
-              <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/fun/index.html">Fun</a></li> -->
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <!-- Blank for now -->
-    </main>
+  <main>
+    <!-- Blank for now -->
+  </main>
 
 </body>
+
 </html>

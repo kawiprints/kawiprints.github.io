@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +10,14 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #f2f2f2; /* light grey / dirty white */
+            background-color: #f2f2f2;
+            /* light grey / dirty white */
         }
 
         /* HEADER */
         header {
-            background-color: #2b2b2b; /* dark grey, not quite black */
+            background-color: #2b2b2b;
+            /* dark grey, not quite black */
             color: white;
             padding: 20px 0;
             display: flex;
@@ -58,6 +61,41 @@
             padding: 50px;
             text-align: center;
         }
+
+        .portfolio-item {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            margin: 40px 0;
+            padding: 20px;
+        }
+
+        .portfolio-image img {
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+
+        .portfolio-content {
+            flex: 1;
+            max-width: 70%;
+        }
+
+        .metadata {
+            margin-top: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            color: #555;
+            /* dark grey */
+            font-size: 0.95rem;
+        }
+
+        .metadata span {
+            white-space: nowrap;
+            /* keeps each item together */
+        }
     </style>
 </head>
 
@@ -68,13 +106,13 @@
 
         <nav>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/about/">About</a></li>
-              <li><a href="/portfolio/">Portfolio</a></li>
-              <li><a href="/contact/">Contact</a></li>
-              <li><a href="/fun/">Fun</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/portfolio/">Portfolio</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                <li><a href="/fun/">Fun</a></li>
 
-              <!-- <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/index.html">Home</a></li>
+                <!-- <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/index.html">Home</a></li>
               <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/about/index.html">About</a></li>
               <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/portfolio/index.html">Portfolio</a></li>
               <li><a href="file:///Users/hdawg/Documents/projects/kp_website/kawiprints.github.io/contact/index.html">Contact</a></li>
@@ -84,8 +122,31 @@
     </header>
 
     <main>
-        <!-- Blank for now -->
+        <div class="portfolio-item">
+            <div class="portfolio-image">
+                <img src="https://www.animationfactory.com/thumbs.php?f=/046/batch_91/b4_dog0002_tnb.png"
+                    alt="Hello"
+                    title="Hello2">
+            </div>
+
+            <div class="portfolio-content">
+                <h2>Project Title</h2>
+
+                <p>
+                    This is where your project description goes. You can talk about what the project is,
+                    what tools you used, what problems you solved, or anything else relevant.
+                </p>
+
+                <div class="metadata">
+                    <span><strong><em>Date:</em></strong> January 2024</span>
+                    <span><strong><em>Location:</em></strong> Remote / USA</span>
+                    <span><strong><em>Tools:</em></strong> HTML, CSS, JS</span>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 </body>
+
 </html>
