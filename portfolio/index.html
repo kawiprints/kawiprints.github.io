@@ -7,6 +7,36 @@
     <title>My Portfolio / Company</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kawiprints/kawiprints.github.io@latest/_css/style.css">
+
+    <style>
+        .portfolio-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .portfolio-image img {
+            max-width: 300px;
+            height: auto;
+            display: block;
+        }
+
+        .metadata {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .metadata span strong {
+            font-style: normal;
+            /* ensures labels are NOT italic */
+        }
+
+        .metadata span em {
+            font-style: italic;
+            /* ensures values ARE italic */
+        }
+    </style>
 </head>
 
 <body>
@@ -20,11 +50,11 @@
             });
     </script>
 
+
     <main>
         <div class="portfolio-item">
             <div class="portfolio-image">
-                <img src="https://www.animationfactory.com/thumbs.php?f=/046/batch_91/b4_dog0002_tnb.png"
-                    alt="Hello"
+                <img src="https://www.animationfactory.com/thumbs.php?f=/046/batch_91/b4_dog0002_tnb.png" alt="Hello"
                     title="Hello2">
             </div>
 
@@ -37,13 +67,12 @@
                 </p>
 
                 <div class="metadata">
-                    <span><strong><em>Date:</em></strong> January 2024</span>
-                    <span><strong><em>Location:</em></strong> Remote / USA</span>
-                    <span><strong><em>Tools:</em></strong> HTML, CSS, JS</span>
+                    <span><strong>Date:</strong> <em>January 2024</em></span>
+                    <span><strong>Location:</strong> <em>Remote / USA</em></span>
+                    <span><strong>Tools:</strong> <em>HTML, CSS, JS</em></span>
                 </div>
             </div>
         </div>
-
     </main>
 
 </body>
