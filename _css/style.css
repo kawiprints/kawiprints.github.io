@@ -57,3 +57,32 @@ main {
     padding: 50px;
     text-align: center;
 }
+
+
+
+/* PORTFOLIO */
+.portfolio-item {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.portfolio-image img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+}
+
+.metadata {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.metadata span strong {
+    font-style: normal; /* ensures labels are NOT italic */
+}
+
+.metadata span em {
+    font-style: italic; /* ensures values ARE italic */
+}
